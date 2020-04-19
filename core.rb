@@ -8,6 +8,7 @@ class Core < Formula
   keg_only "this is a meta-formulae"
 
   depends_on "fish"
+  depends_on "git"
   depends_on "gibo"
   depends_on "hub"
   depends_on "jq"
@@ -15,6 +16,7 @@ class Core < Formula
   def install
     system "touch dummy"
     info.install "dummy"
+    ohai "To install fisher, see https://github.com/jorgebucaran/fisher/"
   end
 
   test do
